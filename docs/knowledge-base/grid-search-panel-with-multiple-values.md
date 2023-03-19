@@ -65,8 +65,7 @@ The separation logic of the different values can be controlled the following var
 
             if (values.length) {
               for (var i = 0; i < searchFields.length; i++) {
-
-                for (var k = 0; k < searchFields.length; k++) {
+                for (var k = 0; k < values.length; k++) {
                   if(values[k] && values[k].trim()){
                     expression.filters.push({ field: searchFields[i], operator: "contains", value: values[k].trim() });
                   }
